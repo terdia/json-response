@@ -45,7 +45,7 @@ class JsonResponse
         }
         
         //set the response header
-        header("Content-Type", "application/json");
+        header("Content-Type: application/json");
         header(sprintf('HTTP/1.1 %s %s', $statusCode, $this->status), true, $statusCode);
         
         if ( $this->message != '')
